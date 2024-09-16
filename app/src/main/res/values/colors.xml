@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="Teal">#80BCBD</color>
+    <color name="VerdePastel">#AAD9BB</color>
+    <color name="VerdeMenta">#D5F0C1</color>
+
+    <color name="Nieve">#E3FDFD</color>
+    <color name="AzulCielo">#CBF1F5</color>
+    <color name="AzulMarino">#A6E3E9</color>
+    <color name="AzulMenta">#71C9CE</color>
+
+
+    <color name="teal_700">#008CFF</color>
+    
+    <color name="VerdeHojau">#33C481</color>
+
+
+
+</resources>
