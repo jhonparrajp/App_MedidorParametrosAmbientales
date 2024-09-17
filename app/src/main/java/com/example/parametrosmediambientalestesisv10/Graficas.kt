@@ -8,49 +8,28 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Monitoreo : AppCompatActivity() {
+class Graficas : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_graficas)
 
 
-
-
-
-
-
-
-
-
-
-        setContentView(R.layout.activity_monitoreo)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-
-
-
-
-
     }
-    fun guardar(view: View){
-        // Guardar los datos en la base de datos
-        // ...
-        
-    }
-    fun irGraficas(view: View){
-        // Ir a la actividad de monitoreo
-        val siguiente = Intent(this, Graficas::class.java)
-        startActivity(siguiente)
-    }
-    fun irTablas(view: View){
-        // Ir a la actividad de tablas
-        val siguiente = Intent(this, Tablas::class.java)
-        startActivity(siguiente)
-    }
+  fun irMonitoreo(view: View) {
+      val siguiente = Intent(this, Monitoreo::class.java)
+      startActivity(siguiente)
+  }
+  fun irTablas(view: View) {
+      val siguiente = Intent(this, Tablas::class.java)
+      startActivity(siguiente)
+  }
+
 }

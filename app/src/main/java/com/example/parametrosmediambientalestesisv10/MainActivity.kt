@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun visualizar(view: View){
         // Visualizar los datos obtenidos
-
+        val siguiente = Intent(this, Graficas::class.java)
+        startActivity(siguiente)
     }
 }

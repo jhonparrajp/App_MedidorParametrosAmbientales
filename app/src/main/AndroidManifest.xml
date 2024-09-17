@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ParametrosMediambientalesTesisV10"
         tools:targetApi="31">
         <activity
+            android:name=".Tablas"
+            android:exported="false" />
+        <activity
+            android:name=".Graficas"
+            android:exported="false" />
+        <activity
             android:name=".Monitoreo"
             android:exported="false" />
         <activity
