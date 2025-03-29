@@ -1,5 +1,6 @@
 package com.example.parametrosmediambientalestesisv10
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -27,10 +28,14 @@ class Tablas : AppCompatActivity() {
     fun iraGraficas(view: View) {
         val siguiente = Intent(this, Graficas::class.java)
         startActivity(siguiente)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this)
+        startActivity(siguiente, options.toBundle())
     }
 
     fun iraMediciones(view: View) {
         val siguiente = Intent(this, Monitoreo::class.java)
         startActivity(siguiente)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this)
+        startActivity(siguiente, options.toBundle())
     }
 }

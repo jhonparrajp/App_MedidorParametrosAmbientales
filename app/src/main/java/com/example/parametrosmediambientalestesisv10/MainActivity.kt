@@ -1,5 +1,6 @@
 package com.example.parametrosmediambientalestesisv10
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -26,10 +27,14 @@ class MainActivity : AppCompatActivity() {
         // Realizar la conexión con el dispositivo
         val siguiente = Intent(this, Monitoreo::class.java)
         startActivity(siguiente)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this)
+        startActivity(siguiente, options.toBundle())
     }
     fun visualizar(view: View){
         // Visualizar los datos obtenidos
         val siguiente = Intent(this, Graficas::class.java)
         startActivity(siguiente)
+        val options = ActivityOptions.makeSceneTransitionAnimation(this)
+        startActivity(siguiente, options.toBundle())
     }
 }
